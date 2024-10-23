@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:community_charts_flutter/community_charts_flutter.dart' as charts;
+import 'package:community_charts_flutter/community_charts_flutter.dart'
+    as charts;
 
 import 'heart_bpm.dart';
 
-export 'package:heart_bpm/heart_bpm.dart' show BPMChart;
+export 'package:heart_bpm/heart_bpm.dart';
 
 /// Generate a simple heart BPM graph
 class BPMChart extends StatelessWidget {
@@ -15,7 +16,6 @@ class BPMChart extends StatelessWidget {
   BPMChart(
     /// List of [SensorValue] data points to be plotted
     List<SensorValue> data, {
-
     /// List of second series of [SensorValue] data points to be plotted
     List<SensorValue>? data2,
   }) : _data = data2 == null
